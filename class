@@ -1,0 +1,32 @@
+blue printl for createing objects 
+
+Object instant can't be created 
+
+var --getter setter 
+val --getter
+default --- ---
+
+Defined member as private then can't access out side the class
+
+class User( var name :String , var age:Int)
+{
+
+  def printName(): Unit =
+  {
+    print(name )
+  }
+
+}
+object SampleData {
+
+
+  def main(args: Array[String]): Unit = {
+
+    var user = new User("max"  ,20 )
+
+    print(user.name)
+    print(user.age)
+    user.printName()
+
+  }
+}
