@@ -3,3 +3,40 @@ Diff b/w list & array :-
 
 Array are mutable and List is imutable 
 list represent link list and arrays are flats 
+
+
+package com.cisco.spark
+
+import java.util.Date
+
+object SampleData {
+
+
+  def main(args: Array[String]): Unit = {
+
+    val lst = List (1,2,3,4,5,6,7)
+
+    val names = List("max","tom" , "john" )
+
+     
+
+      println( 0 :: lst) ;
+      println(names) ;
+      println( 1:: 5:: 9::Nil ) ;
+      println(names.head)
+      println(names.tail)
+      println(names.isEmpty)
+      println(lst.head)
+      println(lst.tail)
+      println(lst.isEmpty)
+      println(lst.reverse)
+      println(lst.sum)
+      println(lst.max)
+
+      lst.foreach(println)
+
+
+
+
+      }
+}
