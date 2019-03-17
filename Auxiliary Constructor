@@ -1,0 +1,37 @@
+Auxilalary Constructions :-
+
+Class can have many auxillary constructors with diffrent signature 
+
+
+
+class User ( var name :Sting ,var age :Int)
+  {
+    def this()
+    {
+      this("tom",18)
+    }
+
+    def this(name :String)
+    {
+      this(name ,32)
+    }
+
+  }
+
+
+object SampleData {
+
+
+  def main(args: Array[String]): Unit = {
+
+    var user = new User("max"  ,20 )
+
+
+    var user1 = new User()
+
+
+    var user2 = new User("max")
+
+    
+  }
+}
