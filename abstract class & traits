@@ -1,0 +1,26 @@
+
+Polygon --super class 
+rect -- sub class
+Tr --subclass 
+
+
+Abstract class --> Restrict the instantiation of Super class 
+& defines the methods which can used by inheriting subclass
+
+method does not hav any body called abstract method
+
+if a class does have atleast one abstract method then class must be declared as abstract class 
+
+
+Scala does not allowed multiple inheritance .
+
+traits are partially interfaces , they can contain both
+atleast one method should be abstract in trait 
+trait can have both abstract & non abstract methods 
+when u are inheriting from traits we can remove override and it will work without any issue 
+
+
+
+Option give some or None . 
+
+if the value find then retrun 1st result else return none instance 
