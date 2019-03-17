@@ -1,0 +1,25 @@
+package com.cisco.spark
+
+object SampleData {
+
+
+
+
+  def math ( x: Double , y :Double , f:( Double , Double) =>Double):Double =f(x,y) //high order functions
+
+
+
+  def main(args: Array[String]): Unit = {
+
+val add = ( x:Int , y :Int ) => x+y // anomous function
+
+
+println( add( 10,20))
+
+
+    val result = math( 10, 20 , ( x,y) => x+y )
+
+    println( result )
+
+  }
+}
