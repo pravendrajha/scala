@@ -1,11 +1,18 @@
 package com.cisco.spark
 
+import java.util.Date
+
 object SampleData {
 
 
 
+  def log (date :Date , message : String )
+  {
+    println ( date + "   "+ message )
+  }
 
-  def math ( x: Double , y :Double , f:( Double , Double) =>Double):Double =f(x,y) //high order functions
+
+  def math ( x: Double , y :Double , f:( Double , Double) =>Double):Double =f(x,y)
 
 
 
@@ -20,6 +27,23 @@ println( add( 10,20))
     val result = math( 10, 20 , ( x,y) => x+y )
 
     println( result )
+
+
+    val sum = ( a:Int, b:Int, c:Int ) => a+b+c
+    val f =sum( 10, 20 , _:Int)
+    println(f(30))
+
+
+
+    val date = new Date ()
+    val new_log = log( date ,_:String) ;
+
+
+    new_log( "This is ma1 ");
+    new_log( "This is ma2 ");
+
+
+
 
   }
 }
