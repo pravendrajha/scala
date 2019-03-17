@@ -1,0 +1,22 @@
+package com.cisco.spark
+
+import java.util.Date
+
+object SampleData {
+
+
+  def main(args: Array[String]): Unit = {
+
+    var number =10 // free variable
+
+    val  add = ( x:Int) => x+ number
+
+    println(add(10))
+
+
+//    impure closure if variable is in defined as var
+
+  //  pure closure if variable is immutable
+
+  }
+}
